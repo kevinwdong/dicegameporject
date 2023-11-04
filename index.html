@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="gamename">
+                <h1>Dice Game</h1>
+            </div>
+        </header>
+        <main>
+            <!-- <div class="selectBox">
+                <select id="select">
+                    <option value="6">D6</option>
+                    <option value="10">D10</option>
+                </select>
+            </div> -->
+            <div class="namebox">
+                <div class="userbox">
+                    <label for="username">Player 1 :</label>
+                    <br>
+                    <input type="text" >
+                </div>
+                <div class="userbox">
+                    <label for="username">Player 2 :</label>
+                    <br>
+                    <input type="text" >  
+                </div>
+            </div>
+            <div class="dicebox">
+                <div class="diceimage">
+                    <img src="image/dice2.png" alt="dice image">
+                </div>
+                <div class="diceimage">                   
+                    <img src="image/dice4.png" alt="dice image">
+                </div>
+            </div>
+            <div class="resultbox">
+                <h2 id="gameResult"><p>Start Game</p></h2>
+            </div>
+            <div class="buttonbox">
+                <div>
+                    <button id="roll-dice" class="button" type="button" onclick="rollD6()">D6 Roll</button>
+                </div>
+                <div>
+                    <button class="button" type="button" onclick="rollD10()">D10 Roll</button>
+                </div>
+            </div>
+            
+        </main>
+        <footer class="footer">
+            <p>© Kevin W Dong 2023</p>
+        </footer>
+    </div>
+    <script src="index.js" rel="stylesheet"></script>
+</body>
+</html>

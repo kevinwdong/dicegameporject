@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dice Game</title>
+    <title>DiceGame</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville&family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -12,51 +12,41 @@
 <body>
     <div class="container">
         <header>
-            <div class="gamename">
-                <h1>Dice Game</h1>
+             <div id="gameName">
+                 <h1>Dice Game</h1>
+             </div>  
+            <div id="selectbox">
+               <label class="inputbox" for="sides">Please choose:</label>
+
+                <select class="inputBox" id="diceSides">
+                    <option value=6>D6</option>
+                    <option value=10>D10</option>
+                  </select>
             </div>
         </header>
         <main>
-            <!-- <div class="selectBox">
-                <select id="select">
-                    <option value="6">D6</option>
-                    <option value="10">D10</option>
-                </select>
-            </div> -->
-            <div class="namebox">
-                <div class="userbox">
-                    <label for="username">Player 1 :</label>
-                    <br>
-                    <input type="text" >
-                </div>
-                <div class="userbox">
-                    <label for="username">Player 2 :</label>
-                    <br>
-                    <input type="text" >  
-                </div>
+            <div class="item dicebox">
+                <label class="inputbox" for="names">Player1's Name:</label>
+                <br>
+                <input class="inputBox" type="text" name="" id="playerOne">
+                <br>
+                <img class="diceImage" src="image/dice2.png" alt="dice image">
+            </div>           
+            <div class="item dicebox">
+                <label class="inputbox" for="names">Player2's Name:</label>
+                <br>
+                <input class="inputBox" type="text" name="" id="playerTwo">
+                <br>
+                <img  class="diceImage" src="image/dice4.png" alt="dice image">
             </div>
-            <div class="dicebox">
-                <div class="diceimage">
-                    <img src="image/dice2.png" alt="dice image">
-                </div>
-                <div class="diceimage">                   
-                    <img src="image/dice4.png" alt="dice image">
-                </div>
+            <div class="item resultbox">
+                <h2 id="gameResult"><p>Good Luck!</p></h2>
             </div>
-            <div class="resultbox">
-                <h2 id="gameResult"><p>Start Game</p></h2>
-            </div>
-            <div class="buttonbox">
-                <div>
-                    <button id="roll-dice" class="button" type="button" onclick="rollD6()">D6 Roll</button>
-                </div>
-                <div>
-                    <button class="button" type="button" onclick="rollD10()">D10 Roll</button>
-                </div>
-            </div>
-            
+            <div class="item buttonbox">
+                <button id="rollButton" class="button" type="button" onclick="rollingDice()">Let's Roll</button>
+            </div>    
         </main>
-        <footer class="footer">
+        <footer id="footer">
             <p>© Kevin W Dong 2023</p>
         </footer>
     </div>

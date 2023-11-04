@@ -17,82 +17,43 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-
-.coverbox {
-    margin-top: 5rem;
-}
-
-#coverimage {
-    width: 20rem;
-}
-
-.selectbox {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    margin-bottom: 3rem;
-    color: white;
-}
-
-.selectbox option {
-    height: 3rem;
-    width: 20rem;
-    text-align: center;
-    font-size: 2.5rem;
-}
-
-
-.namebox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 3rem;
-}
-
-
-.userbox {
     text-align: center;
 }
 
-.userbox label {
-    height: 3rem;
-    width: 20rem;
-    text-align: center;
-    font-size: 2.5rem;
+h1 {
+    font-size: 8rem;
 }
 
-.userbox input { 
-    height: 3rem;
+main {
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3fr, 1fr, 1fr;
+    gap: 3rem;
+}
+
+.inputBox {
     width: 15rem;
-    border: none;
-    text-align: center;
+    height: 3rem;
+    font-size: 2rem;
     color: rgb(85, 132, 225);
-    font-size: 2.5rem;
 }
 
 .dicebox {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .resultbox {
-    text-align: center;
+    grid-column: span 2;
     font-size: 4rem;
 }
 
 .buttonbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-    margin-top: 5rem;
-}
-
-.diceimage {
-    margin: 0 5rem;
-    text-align: center;
+    grid-column: span 2;
 }
 
 .button {
@@ -102,14 +63,5 @@ body {
     width: 100px;
     font-size: 3rem;
     font-weight: 300;
-    text-align: center;
-    background-color: white;
     color: rgb(85, 132, 225)
-}
-
-.footer {
-    align-items: flex-end;
-    border-top: 2px solid;
-    font-size: 1.5rem;
-    padding: 0 10rem;
 }

@@ -16,24 +16,25 @@
                  <h1>Dice Game</h1>
              </div>  
             <div id="selectbox">
-               <label class="inputbox" for="sides">Please choose:</label>
+               <label class="inputbox" for="sides">Type of Dice:</label>
+               <br>
 
                 <select class="inputBox" id="diceSides">
-                    <option value=6>D6</option>
-                    <option value=10>D10</option>
+                    <option value=6>Six Sides</option>
+                    <option value=10>Ten Sides</option>
                   </select>
             </div>
         </header>
         <main>
             <div class="item dicebox">
-                <label class="inputbox" for="names">Player1's Name:</label>
+                <label class="inputbox" for="names">Player One:</label>
                 <br>
                 <input class="inputBox" type="text" name="" id="playerOne">
                 <br>
                 <img class="diceImage" src="image/dice2.png" alt="dice image">
             </div>           
             <div class="item dicebox">
-                <label class="inputbox" for="names">Player2's Name:</label>
+                <label class="inputbox" for="names">Player Two:</label>
                 <br>
                 <input class="inputBox" type="text" name="" id="playerTwo">
                 <br>
@@ -43,7 +44,7 @@
                 <h2 id="gameResult"><p>Good Luck!</p></h2>
             </div>
             <div class="item buttonbox">
-                <button id="rollButton" class="button" type="button" onclick="rollingDice()">Let's Roll</button>
+                <button id="rollButton" class="button" type="button" onclick="rollingDice()">Roll</button>
             </div>    
         </main>
         <footer id="footer">

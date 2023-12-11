@@ -9,6 +9,14 @@ body {
     color: white
 }
 
+h1 {
+    font-size: 4rem;
+}
+
+label {
+    font-size: 2rem;
+}
+
 .container {
     width: 100%;
     height: 100vh;
@@ -20,36 +28,30 @@ body {
     text-align: center;
 }
 
-h1 {
-    font-size: 8rem;
-}
-
 main {
-    width: 500px;
+    width: 250;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 3fr, 1fr, 1fr;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .inputBox {
-    width: 15rem;
+    width: 12rem;
     height: 3rem;
     font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     color: rgb(85, 132, 225);
 }
 
-.dicebox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+.diceImage {
+    width:80px
 }
 
 .resultbox {
     grid-column: span 2;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .buttonbox {
@@ -64,4 +66,36 @@ main {
     font-size: 3rem;
     font-weight: 300;
     color: rgb(85, 132, 225)
+} 
+
+@media screen and (min-width:767px) {
+
+h1 {
+    font-size: 8rem;
 }
+
+label {
+    font-size: 3rem;
+}
+
+main {
+    gap: 3rem;
+}
+
+.inputBox {
+    width: 15rem;
+}
+
+.diceImage {
+    width:120px
+}
+
+.resultbox {
+    font-size: 4rem;
+}
+
+.button {
+    font-size: 4rem;
+}  
+}
+

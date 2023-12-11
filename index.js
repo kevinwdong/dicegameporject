@@ -15,8 +15,10 @@ let randomImage2 = "image/dice" + randomNumber2 + ".png";
 document.querySelectorAll("img")[0].setAttribute("src", randomImage1);
 document.querySelectorAll("img")[1].setAttribute("src", randomImage2);    
     //use condition to present winner's name
-if ( randomNumber1 > randomNumber2 ) document.getElementById("gameResult").innerText = userOne + " Wins!"
-else if ( randomNumber1 < randomNumber2 ) document.getElementById("gameResult").innerText = userTwo + " Wins!"
-else document.getElementById("gameResult").innerText = "Draw Game!" 
-
+if ( randomNumber1 > randomNumber2 ) 
+    document.getElementById("gameResult").innerText = userOne + " Wins!"
+else if ( randomNumber1 < randomNumber2 ) 
+    document.getElementById("gameResult").innerText = userTwo + " Wins!"
+else 
+    document.getElementById("gameResult").innerText = "Draw Game!" 
 }
